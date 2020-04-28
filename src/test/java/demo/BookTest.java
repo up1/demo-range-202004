@@ -17,11 +17,12 @@ public class BookTest {
 
     @Test
     public void ค้นหาหนังสือรหัส_1000_ต้องได้ข้อมูลหนังสือ_Potter_part_1_ราคา_8_บาท() {
-        // Arrange
+        // AAA , Given-When-Then
+        // Arrange == Given == Precondition
         Book book = new Book();
-        // Act
+        // Act == When
         Book foundBook = book.findById(1000);
-        // Assert
+        // Assert == Then
         assertEquals("Potter part 1", book.getName());
         assertEquals(8, foundBook.getPrice(), 0.0001);
     }
